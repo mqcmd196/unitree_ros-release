@@ -18,7 +18,7 @@ endforeach()
 
 file(GLOB mjcf_files CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/g1*.xml")
 install(FILES ${mjcf_files} DESTINATION share/${PROJECT_NAME})
-install(DIRECTORY meshes inspire_hand images
+install(DIRECTORY meshes inspire_hand images launch
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()
